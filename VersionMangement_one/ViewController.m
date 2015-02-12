@@ -9,6 +9,9 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) IBOutlet UITextField *textField_sai;
+@property (strong, nonatomic) IBOutlet UILabel *label_sai;
+- (IBAction)button_sai:(id)sender;
 
 @end
 
@@ -27,4 +30,9 @@
 }
 
 // This is also a respected comments
+- (IBAction)button_sai:(id)sender {
+    
+    NSString *string = [NSString stringWithFormat:@"%@",self.textField_sai.text];
+    self.label_sai.text = string;
+}
 @end
