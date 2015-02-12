@@ -10,6 +10,8 @@
 
 @interface AppDelegate ()
 
+// This is a sample comments
+
 @end
 
 @implementation AppDelegate
